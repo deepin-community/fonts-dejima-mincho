@@ -1,0 +1,25 @@
+Source: fonts-dejima-mincho
+Section: fonts
+Priority: optional
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Uploaders: Hideki Yamane <henrich@debian.org>
+Build-Depends: debhelper (>= 12), debhelper-compat (= 12),
+Standards-Version: 4.3.0
+Homepage: https://code.google.com/archive/p/dejima-fonts/downloads
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-dejima-mincho.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-dejima-mincho
+
+Package: fonts-dejima-mincho
+Architecture: all
+Multi-Arch: foreign
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: ${misc:Depends}
+Breaks: ttf-dejima-mincho (<< 227-3)
+Replaces: ttf-dejima-mincho (<< 227-3)
+Description: antique-looking Japanese TrueType Mincho font
+ Dejima Mincho is Japanese TrueType Mincho font.
+ .
+ Its Kanji part is based on "Tsukiji 3gou" and Kana is based on "Tsukiji 4gou",
+ these are known as "Tsukiji-tai" font, in Meiji-era. These old fonts are 
+ already under public domain.
+
